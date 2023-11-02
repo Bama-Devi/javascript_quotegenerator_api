@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=Belanosima&family=Courgette&family=Crimson+Pro:ital,wght@0,600;1,200&family=Kanit:ital,wght@1,300&family=Lumanosimo&family=Mooli&family=Noto+Serif:ital,wght@1,300;1,400&family=Roboto&family=Ubuntu:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=Belanosima&family=Courgette&family=Crimson+Pro:ital,wght@0,600;1,200&family=Kanit:ital,wght@1,300&family=Lugrasimo&family=Lumanosimo&family=Mooli&family=Noto+Serif:ital,wght@1,300;1,400&family=Roboto&family=Ubuntu:ital,wght@1,500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background: #594545;
+    font-family: 'Lugrasimo', cursive;
+}
+
+.cardQuote {
+    width: 60%;
+    max-width: 500px;
+    max-height: 1000px;
+    background-color: #9E7676;
+    margin: 100px auto 0;
+    border-radius: 20px;
+    padding: 40px 30px;
+    text-align: center;
+}
+
+.title {
+    font-size: 24px;
+    color: #411b1b;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+    font-family: 'Lumanosimo', cursive;
+}
+
+.quoteArea {
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.quote {
+    text-shadow: 1px 1.5px 0.4px #411b1b;
+}
+
+.author {
+    margin-top: 10px;
+    text-align: right;
+    font-size: 18px;
+    font-weight: 500;
+    color: #feeded;
+    font-style: italic;
+}
+
+.button {
+    margin-top: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Lugrasimo', cursive;
+    font-size: 15px;
+}
+
+.button ul {
+    display: flex;
+}
+
+.button ul li {
+    list-style: none;
+    margin: 0 5px;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 2px solid #411b1b;
+    /* color: #411b1b; */
+}
+
+.button ul li:hover {
+    background: #594545;
+    color: #ffffff;
+}
+
+button {
+    border: 0;
+    outline: 0;
+    border-radius: 10px;
+    padding: 15px 12px;
+    background: #ce9393;
+    color: #000000;
+    cursor: pointer;
+    text-shadow: 0.1px 1px 0.1px #411b1b;
+    text-transform: capitalize;
+}
+
+button:hover {
+    background: #594545;
+    opacity: 0.9;
+    color: #ffffff;
+}
+
+/* .content{
+    display: none;
+} */
+
+
+button.loading {
+    opacity: 0.7;
+    pointer-events: none;
+    /* this will work when settimeout timer is not available,we cant just click twice or thrice to reload the new quote,
+    if settimeout presents it will load thrice or more */
+}
